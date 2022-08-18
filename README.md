@@ -18,4 +18,4 @@ Existem dois arquivos a serem usados nos eventos **On-Up** e **On-Down** do resp
 A única intervenção necessária, será alterar a variável **interfaceLan** que consta no arquivo **profile_on-up.rsc** e substituir o valor *bridge* pelo nome da interface lan.
 
 ## Sugestões e Melhorias
-Sugestões, Bugs e melhorias podem ser informadas ou solicitadas via [Issues][https://github.com/jayroncastro/pppoemarkmangle/issues]
+Sugestões, Bugs e melhorias podem ser informadas ou solicitadas via [Issues](https://github.com/jayroncastro/pppoemarkmangle/issues)
