@@ -14,7 +14,7 @@
   :local interfaceName [/interface ethernet get $interface name];
 
   #Marca conexão entrando pelo link
-  /ip firewall mangle add chain=prerouting in-interface=$interface connection-mark="no-mark" action=mark-connection new-connection-mark="in_$interfaceName" comment="** marca conexao entrando pelo link $interfaceName";
+  /ip firewall mangle add chain=prerouting in-interface=$interface connection-state=new connection-mark="no-mark" action=mark-connection new-connection-mark="in_$interfaceName" comment="** marca conexao entrando pelo link $interfaceName";
   :log debug message=("Regra mangle de marcacao de conexao criada com sucesso");
 
   #Marca rota de saída dos pacotes da lan pelo link que entrou
