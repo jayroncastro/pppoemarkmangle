@@ -22,7 +22,7 @@
   :log debug message=("Regra mangle de marcacao de rota criada com sucesso");
 
   #Marca rota de saída local pela interface de pppoe especificado
-  /ip firewall mangle add chain=output src-address=$"local-address" action=mark-routing new-routing-mark="out_$interfaceName" out-interface=$interface passthrough=no comment="** marca rota de saida local pelo link $interfaceName";
+  /ip firewall mangle add chain=output src-address=$"local-address" action=mark-routing new-routing-mark="out_$interfaceName" passthrough=no comment="** marca rota de saida local pelo link $interfaceName";
   :log debug message=("Regra mangle de marcacao de rota criada com sucesso");
 
   #Cria rota forcando saida pelo link pppoe especificado
